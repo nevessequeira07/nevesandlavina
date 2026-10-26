@@ -1,0 +1,20 @@
+{
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": "dist",
+  "headers": [
+    {
+      "source": "/neves-lavina-wedding.ics",
+      "headers": [
+        {
+          "value": "text/calendar; charset=utf-8",
+          "key": "Content-Type"
+        },
+        {
+          "value": "inline; filename=\"Neves-and-Lavina-Wedding.ics\"",
+          "key": "Content-Disposition"
+        }
+      ]
+    }
+  ]
+}

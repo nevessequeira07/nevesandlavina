@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Neves and Lavina//Wedding Invitation//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:neves-lavina-wedding-20261226@neveswedslavina.vercel.app
+DTSTAMP:20261026T000000Z
+DTSTART:20261226T113000Z
+DTEND:20261226T123000Z
+SUMMARY:Neves and Lavina - Holy Mass and Wedding
+LOCATION:Milagris Cathedral
+DESCRIPTION:Holy Mass and wedding ceremony at 5 PM IST.\nReception follows
+  at Navsarni Ground\, Sawantwadi at 7:30 PM IST.\nCalendar duration is a
+  one-hour placeholder for the ceremony; adjust it to your plans.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
