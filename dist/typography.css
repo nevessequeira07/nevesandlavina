@@ -1,0 +1,83 @@
+/* Upright, handwritten lettering inspired by the supplied invitation card. */
+:root{--names-font:'Rochester',cursive;--script:'Rochester',cursive;--serif:'Rochester',cursive;--sans:'Rochester',cursive}
+body{font-size:23px;font-weight:400}
+.hero h1,.envelope-caption p,.closing-names,h2,h3{font-weight:400;font-style:normal}
+.hero h1{font-size:clamp(80px,8vw,124px);line-height:1.2}
+.hero h1 span{font-size:.85em;margin:0 8px}
+.envelope-caption p{font-size:62px}
+.closing-names{font-size:54px}
+.closing-date{font-size:20px;letter-spacing:2px}
+.hero-invite{font-size:27px;line-height:1.5}
+.hero-church{font-size:26px}
+.eyebrow,.hero .eyebrow{font-size:20px;letter-spacing:.5px;line-height:1.6;font-weight:400;text-transform:none}
+.envelope-top{font-size:22px;letter-spacing:1px;line-height:1.8}
+.envelope-caption>span{font-size:20px;letter-spacing:.8px}
+.wordmark{font-size:29px;letter-spacing:2px}
+nav a{font-size:20px;letter-spacing:.5px;text-transform:none}
+.header-date{font-size:18px;letter-spacing:2px}
+.hero-side{font-size:16px;letter-spacing:1px}
+.hero-date>span{font-size:19px;letter-spacing:.5px;min-width:100px;padding:10px 4px}
+.hero-date b{font-size:32px}
+.hero-date i{font-size:42px;font-style:normal}
+.discover{font-size:18px;letter-spacing:1px;gap:8px}
+blockquote{font-size:clamp(29px,3vw,40px);font-style:normal;line-height:1.6}
+cite{font-size:18px;letter-spacing:1px;font-style:normal}
+h2{font-size:clamp(46px,4.8vw,66px)}
+.section-intro>p:last-child,.section-description{font-size:25px;line-height:1.6}
+.save-date>p:not(.eyebrow){font-size:23px}
+.button{font-size:20px;letter-spacing:.4px;font-weight:400;padding:12px 25px}
+.date-under span{font-size:32px}
+.date-under b{font-size:70px}
+.date-under strong{font-size:20px;letter-spacing:.5px;font-weight:400}
+.date-under em{font-size:22px;font-style:normal}
+.countdown-heading p{font-size:27px;font-style:normal}
+.countdown b{font-size:47px}
+.countdown span{font-size:18px;letter-spacing:.5px;text-transform:none}
+.timeline time{font-size:48px}
+.timeline time span{font-size:20px}
+.event-number{font-size:24px;font-style:normal}
+.event-copy h3{font-size:33px;line-height:1.35}
+.event-copy p{font-size:24px;line-height:1.6}
+.event-location{font-size:20px;line-height:1.6;letter-spacing:.3px}
+.venue .eyebrow{font-size:20px;letter-spacing:.3px}
+.venue h3{font-size:38px}
+.venue>p:not(.eyebrow){font-size:24px}
+.venue .button{font-size:20px}
+.closing>p:not(.eyebrow){font-size:24px}
+footer>span{font-size:28px}
+footer p{font-size:22px;font-style:normal}
+footer a{font-size:18px;letter-spacing:.3px}
+@media(min-width:1400px){.envelope-top{font-size:25px;letter-spacing:1px}.envelope-caption p{font-size:74px}}
+@media(max-width:700px){
+ header{padding:0 6%}nav{gap:22px}nav a{font-size:19px}.wordmark{font-size:26px}
+ .hero h1{font-size:74px}.hero h1 span{margin:0 6px}
+ .hero .eyebrow{font-size:18px;max-width:310px;line-height:1.5;letter-spacing:.3px}
+ .hero-invite{font-size:25px}.hero-church{font-size:24px}
+ .hero-date{gap:16px}.hero-date>span{min-width:85px;font-size:17px;letter-spacing:0}
+ .hero-date b{font-size:29px}.hero-date i{font-size:38px}
+ .envelope-top{font-size:20px;letter-spacing:.5px}.envelope-caption p{font-size:50px}
+ .envelope-caption>span{font-size:19px;letter-spacing:.4px}
+ h2{font-size:46px}.eyebrow{font-size:19px}
+ blockquote{font-size:29px}cite{font-size:17px}
+ .section-description{font-size:24px}.save-date>p:not(.eyebrow){font-size:22px}
+ .countdown>div{padding:0 14px;min-width:74px}.countdown b{font-size:39px}.countdown span{font-size:17px}
+ .countdown-heading p{font-size:25px}.timeline article{grid-template-columns:93px 1fr;gap:12px}
+ .timeline time{font-size:38px}.timeline time span{font-size:17px}
+ .event-copy h3{font-size:29px}.event-copy p{font-size:23px}.event-location{font-size:20px;letter-spacing:0}
+ .venue h3{font-size:36px}.closing h2{font-size:44px}.closing-names{font-size:48px}
+}
+@media(max-width:420px){.hero h1{font-size:61px}.hero h1 span{margin:0 3px}.hero-invite{font-size:24px}.hero-date{gap:12px}.hero-date>span{min-width:79px;font-size:16px}}
+
+/* Allow the time column to fit its actual lettering; reserve a clear gutter. */
+.hero h1,.envelope-caption p,.closing-names{white-space:nowrap}
+@media(max-width:700px){
+ .hero h1{font-size:clamp(42px,14.3vw,74px);letter-spacing:0}
+ .hero h1 span{margin:0 3px}
+ .envelope-caption p{font-size:clamp(38px,12vw,54px)}
+ .closing-names{font-size:clamp(38px,12.8vw,54px)}
+ .timeline article{grid-template-columns:max-content minmax(0,1fr);column-gap:22px}
+ .timeline time{font-size:clamp(30px,9vw,38px);padding-right:8px}
+ .timeline time span{font-size:17px}
+ .event-copy{min-width:0;padding-left:18px}
+ .event-copy h3{overflow-wrap:break-word}
+}
