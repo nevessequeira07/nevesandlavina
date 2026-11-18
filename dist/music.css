@@ -1,0 +1,5 @@
+.music-toggle{position:fixed;right:20px;bottom:max(20px,env(safe-area-inset-bottom));z-index:1000;min-height:44px;padding:10px 17px;border:1px solid #b57c6d66;border-radius:30px;background:#fffaf5f5;color:#794939;box-shadow:0 3px 18px #79493918;font:12px Georgia,serif;letter-spacing:.5px;cursor:pointer}
+.music-toggle[hidden]{display:none}
+.music-toggle:hover{background:#f5e5df}
+.music-toggle:focus-visible{outline:2px solid #794939;outline-offset:4px}
+@media(max-width:700px){.music-toggle{right:14px;bottom:max(14px,env(safe-area-inset-bottom))}}
